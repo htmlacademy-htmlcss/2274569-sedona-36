@@ -222,6 +222,13 @@ h2.catalog-link-question {
   text-align: start;
 }
 
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  text-transform: capitalize;
+}
+
 .breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
