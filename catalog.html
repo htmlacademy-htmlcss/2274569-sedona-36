@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header data-test="header" class="page-header">
@@ -41,6 +42,7 @@
           </nav>
       </header>
   <main data-test="main">
+    <section data-test="filter" class="product">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -56,46 +58,58 @@
         </li>
       </ul>
     </header>
-    <section data-test="filter" class="product">
       <form class="product-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="product-filter-group">
           <legend class="product-filter-title">Инфраструктура:</legend>
           <ul>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="swimmingpool" checked> Бассейн
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="parking" checked> Парковка
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="wi-fi"> Wi-Fi
-          </label>
+            <li>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="swimmingpool" checked> Бассейн
+              </label>
+            </li>
+            <li>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked> Парковка
+              </label>
+            </li>
+            <li>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="wi-fi"> Wi-Fi
+              </label>
+            </li>
           </ul>
         </fieldset>
         <fieldset class="product-filter-group">
           <legend class="product-filter-title">Тип Жилья:</legend>
           <ul>
-            <label class="control">
-              <input class="control-input" type="radio" value="hotel" name="product-group" checked> Гостиница
-            </label>
-            <label class="control">
-              <input class="control-input" type="radio" value="motel" name="product-group" > Мотель
-            </label>
-            <label class="control">
-              <input class="control-input" type="radio" value="apartments" name="product-group"> Апатаменты
-            </label>
+            <li>
+              <label class="control">
+                <input class="control-input" type="radio" value="hotel" name="product-group" checked> Гостиница
+              </label>
+            </li>
+            <li>
+              <label class="control">
+                <input class="control-input" type="radio" value="motel" name="product-group" > Мотель
+              </label>
+            </li>
+            <li>
+              <label class="control">
+                <input class="control-input" type="radio" value="apartments" name="product-group"> Апатаменты
+              </label>
+            </li>
             </ul>
         </fieldset>
         <fieldset class="product-filter-group">
           <legend class="product-filter-title">Стоимость, ₽:</legend>
-          <label class="min-price">от
-            <input type="text" name="min-price" value="0"></label>
-				  <label class="max-price">до
-            <input type="text" name="max-price" value="9000"></label>
+          <form>
+            <label class="price-filter min-price">От
+              <input class="price-value" type="text" name="min-price" value="0"></label>
+            <label class="price-filter max-price">До
+              <input class="price-value" type="text" name="max-price" value="9000"></label>
+          </form>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
-      </form>
+        <button class="button-submit" type="submit">Применить</button>
+        <button class="button-reset" type="reset">Сбросить</button>
     </section>
     <section data-test="catalog" class="catalog">
     <div class="sortin-and-form">
@@ -107,14 +121,13 @@
       <a href="#" type="button"><img src="images/view-2.svg" alt="Вид-2" width="16" height="14"></a>
       <a href="#" type="button"><img src="images/view-3.svg" alt="Вид-3" width="16" height="14"></a>
     </div>
-      <section class="product-list">
       <div class="product-card">
         <img src="images/catalog/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="212">
         <h3>Amara Resort & Spa</h3>
         <p class="product-type">Гостиница</p>
         <p class="price">От 4000 ₽</p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button" type="submit">в избранное</button>
+        <a class="button more" href="#">подробнее</a>
+        <button class="button favorites" type="submit">в избранное</button>
         <p class="rating">Рейтинг: 8,5</p>
       </div>
       <div class="product-card">
@@ -122,8 +135,8 @@
         <h3>Villas at Poco Diablo</h3>
         <p class="product-type">Гостиница</p>
         <p class="price">От 5000 ₽</p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button" type="submit" checked>в избранном</button>
+        <a class="button more" href="#">подробнее</a>
+        <button class="button checked" type="submit" checked>в избранном</button>
         <p class="rating">Рейтинг: 9,2</p>
       </div>
       <div class="product-card">
@@ -131,8 +144,8 @@
         <h3>Desert Quail Inn</h3>
         <p class="product-type">Гостиница</p>
         <p class="price">От 2500 ₽</p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button" type="submit">в избранное</button>
+        <a class="button more" href="#">подробнее</a>
+        <button class="button favorites" type="submit">в избранное</button>
         <p class="rating">Рейтинг: 6,9</p>
       </div>
       <div class="product-card">
@@ -140,8 +153,8 @@
         <h3>GreenTree Inn</h3>
         <p class="product-type">Гостиница</p>
         <p class="price">От 1500 ₽</p>
-        <a class="button" href="#">подробнее</a>
-        <button class="button" type="submit">в избранное</button>
+        <a class="button more" href="#">подробнее</a>
+        <button class="button favorites" type="submit">в избранное</button>
         <p class="rating">Рейтинг: 5,0</p>
       </div>
       <ul class="pagination">
