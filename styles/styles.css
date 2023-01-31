@@ -40,7 +40,9 @@ li {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  cursor: pointer;
 }
+
 
 .favorites-number {
   font-weight: 400;
@@ -58,6 +60,7 @@ li {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .hero {
@@ -171,7 +174,8 @@ h2.catalog-link-question {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #756157;;
+  background-color: #756157;
+  cursor: pointer;
 }
 
 .subscribe {
@@ -179,7 +183,7 @@ h2.catalog-link-question {
   background-color: #000000;
   background: url(../images/subscribe-background.jpg);
   background-size: 100% auto;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 .subscribe-title {
@@ -203,6 +207,7 @@ h2.catalog-link-question {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
+  cursor: pointer;
 }
 
 .contacts-phone {
@@ -272,6 +277,7 @@ h2.catalog-link-question {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+  cursor: pointer;
 }
 
 .button-reset {
@@ -284,6 +290,7 @@ h2.catalog-link-question {
   padding: 0;
   border: 0;
   background: transparent;
+  cursor: pointer;
  }
 
  .catalog {
@@ -325,6 +332,7 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
+  cursor: pointer;
 }
 
 .button.favorites {
@@ -335,6 +343,7 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #82B3D3;
+  cursor: pointer
 }
 
 .button.checked {
@@ -345,6 +354,7 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #7DB54F;
+  cursor: pointer;
 }
 
 .rating {
