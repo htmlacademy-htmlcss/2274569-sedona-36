@@ -42,12 +42,20 @@ li {
   color: #000000;
 }
 
+.favorites-number {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  background: #7DB54F;
+  border-radius: 10px;
+}
+
 .navigation-link.batton {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #756157;
   text-transform: uppercase;
 }
 
@@ -55,8 +63,6 @@ li {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index-background.jpg");
-  width: 1200px;
-  height: 485px;
 }
 
 .advantages{
@@ -70,36 +76,26 @@ h1 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 620px;
-  height: 72px;
-}
+ }
 
 h1+p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  width: 651px;
-  height: 26px;
   color: #333333
 }
 
 .advantages li:nth-child(4n+1) {
   background: #82B3D3;
-  width: 400px;
-  height: 384px;
   color: #ffffff;
 }
 
 li.advantages-item:nth-child(2n+2) {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
-  height: 384px;
-}
+ }
 
 li.advantages-item:nth-child(3) {
   background: rgba(131, 179, 211, 0.2);
-  width: 400px;
-  height: 384px;
 }
 
 .advantages-title {
@@ -124,8 +120,6 @@ li.advantages-item:nth-child(3) {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 505px;
-  height: 72px;
 }
 
 .benefits-travel+p {
@@ -133,14 +127,8 @@ li.advantages-item:nth-child(3) {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  width: 490px;
-  height: 26px;
-  }
+    }
 
-.benefits-item {
-  width: 400px;
-  height: 385px;
-  }
 
 .benefits-title {
   font-weight: 700;
@@ -165,17 +153,13 @@ h2.catalog-link-question {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 297px;
-  height: 36px;
- }
+   }
 
 .catalog-link-question+p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  width: 592px;
-  height: 52px;
 }
 
 .catalog-link-button {
@@ -184,17 +168,13 @@ h2.catalog-link-question {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #000000;
-  width: 276px;
-  height: 36px;
+  background-color: #756157;;
 }
 
 .subscribe {
   color: #ffffff;
   background-color: #000000;
   background: url(../images/subscribe-background.jpg);
-  width: 1200px;
-  height: 414.86px;
 }
 
 .subscribe-title {
@@ -202,16 +182,12 @@ h2.catalog-link-question {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 404px;
-  height: 36.35px;
 }
 
 .subscribe-title+p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  width: 475px;
-  height: 52.51px;
 }
 
 .sebscribe-button {
@@ -220,10 +196,8 @@ h2.catalog-link-question {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 132px;
-  height: 36px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82B3D3;
 }
 
 .contacts-phone {
