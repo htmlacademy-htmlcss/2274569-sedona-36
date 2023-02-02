@@ -61,6 +61,9 @@ li {
   background-color: #756157;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .hero {
@@ -133,8 +136,42 @@ li.advantages-item:nth-child(3) {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-    }
+}
 
+.benefits-item {
+  width: 400px;
+  height: 385px;
+}
+
+.benefits-item:nth-child(1)::after {
+  background-image: url(../images/house.svg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.benefits-item:nth-child(2)::after {
+  background-image: url(../images/food.svg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.benefits-item:nth-child(3)::after {
+  background-image: url(../images/suvenirs.svg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 75px;
+  background-repeat: no-repeat;
+}
 
 .benefits-title {
   font-weight: 700;
@@ -176,6 +213,9 @@ h2.catalog-link-question {
   color: #FFFFFF;
   background-color: #756157;
   cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .subscribe {
@@ -208,6 +248,9 @@ h2.catalog-link-question {
   color: #ffffff;
   background-color: #82B3D3;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  border:none;
+  text-decoration:none;
 }
 
 .contacts-phone {
@@ -278,6 +321,9 @@ h2.catalog-link-question {
   color: #FFFFFF;
   background-color: #82B3D3;
   cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .button-reset {
@@ -291,6 +337,7 @@ h2.catalog-link-question {
   border: 0;
   background: transparent;
   cursor: pointer;
+  text-decoration:none;
  }
 
  .catalog {
@@ -333,6 +380,9 @@ h3 {
   color: #FFFFFF;
   background: #756157;
   cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .button.favorites {
@@ -343,7 +393,10 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #82B3D3;
-  cursor: pointer
+  cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .button.checked {
@@ -355,6 +408,9 @@ h3 {
   color: #FFFFFF;
   background: #7DB54F;
   cursor: pointer;
+  border-radius: 4px;
+  border:none;
+  text-decoration:none;
 }
 
 .rating {
@@ -373,4 +429,9 @@ h3 {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
