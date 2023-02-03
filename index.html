@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+  <div class="container">
 <header data-test="header" class="page-header">
   <nav class="navigation">
     <a class="navigation-logo" href="index.html">
@@ -16,7 +17,7 @@
         <a class="navigation-link" href="index.html">Главная</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">О седоне</a>
+        <a class="navigation-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -42,19 +43,21 @@
       </ul>
       </nav>
   </header>
-   <main data-test="main" class="main-index">
+   <main data-test="main" class="main-container">
     <section class="hero" data-test="hero">
-      <img src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!" width="458" height="352">
+      <img src="images/welcome.svg" class="logo" alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!" width="458" height="352">
     </section>
     <section data-test="advantages" class="advantages">
-    <h1>Седона — небольшой городок в Аризоне,
+    <div class="slogan">
+      <h1>Седона — небольшой городок в Аризоне,
       заслуживающий большего!</h1>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
       <ul class="advantages-list">
         <li class="advantages-item">
           <h2 class="advantages-title">Настоящий городок</h2>
           <p class="advatages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="images/sedona-photo.jpg" alt="Фото города" width="800" height="384">
+          <img src="images/sedona-photo.jpg" alt="Фото города" width="800" height="384" class="advantages-photo">
         </li>
         <li class="advantages-item">
           <h2 class="advantages-title">Небольшая площадь</h2>
@@ -71,13 +74,15 @@
         <li class="advantages-item">
           <h2 class="advantages-title">Там есть мост дьявола</h2>
           <p class="advatages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img src="images/canyon-sedona.jpg" alt="Фото моста дьявола" width="800" height="385">
+          <img src="images/canyon-sedona.jpg" alt="Фото моста дьявола" width="800" height="385" class="advantages-photo">
         </li>
       </ul>
     </section>
     <section class="benefits">
-      <p class="benefits-travel">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-      <p>Опытный персонал и качественное обслуживание!</p>
+      <div class="benefits-slogan">
+        <p class="benefits-travel">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p>Опытный персонал и качественное обслуживание!</p>
+      </div>
       <ul class="benefits-list">
         <li class="benefits-item">
           <h2 class="benefits-title">Жилье</h2>
@@ -101,13 +106,14 @@
     <section data-test="subscribe" class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="appointment-email">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <input class="subscribe-form" type="email" placeholder="Ваш e-mail" name="appointment-email">
         <button class="sebscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
    </main>
    <footer data-test="footer" class="page-footer">
+    <div class="page-footer-container">
     <section class="footer-social">
       <ul class="footer-sicial-list">
         <li class="footer-social-item">
@@ -138,6 +144,8 @@
         <img class="html-academy-logo" src="images/footer/html-academy.svg" alt="Логотип .html academy" width="115" height="33">
       </a>
     </section>
+    </div>
    </footer>
+  </div>
   </body>
 </html>
