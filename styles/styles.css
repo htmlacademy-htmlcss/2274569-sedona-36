@@ -24,11 +24,12 @@ body {
   line-height: 21px;
   color: #050404;
   background-color: #F2F2F2;
+  margin: 0 auto;
+  width: 1200px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding: 0 40px;
   position: relative;
 }
@@ -36,18 +37,55 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 70px;
+  gap: 30px;
+  margin-bottom: -10px;
+}
+
+.navigation-logo {
+  width: 138px;
+}
+
+.page-header-logo {
+  position: absolute;
 }
 
 .navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 640px;
   margin: 0;
   padding: 0;
+}
 
+.navigation-item {
+  padding: 20px 16px;
 }
 
 .navigation-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   max-width: 310px;
   margin-left: auto;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link-item {
+  justify-content: center;
+  align-items: center;
+  padding: 22px 12px;
+  isolation: isolate;
+}
+
+.navigation-link-item:last-child {
+  padding: 0;
 }
 
 li {
@@ -91,11 +129,6 @@ li {
   text-decoration:none;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-}
-
 main {
   text-align: center;
 }
@@ -112,9 +145,11 @@ main {
 .hero {
   color: #ffffff;
   background-color: #000000;
-  background-image: url("../images/index-background.jpg");
+  background-image: url(../images/index-background-down.svg), url("../images/index-background.jpg");
+  background-position: bottom, top;
   background-size: 100% auto;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  padding: 66.5px 0;
 }
 
 .slogan {
@@ -720,9 +755,7 @@ h3 {
   transform: scale(0);
 }
 
-h1,h2,h3,p {
-  margin: 0 auto;
-}
+
 
 .subscribe-catalog {
   display: flex;
