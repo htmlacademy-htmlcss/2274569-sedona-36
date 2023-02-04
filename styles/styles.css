@@ -117,9 +117,12 @@ li {
 }
 
 .navigation-link.batton {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  width: 92px;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
@@ -127,6 +130,7 @@ li {
   border-radius: 4px;
   border:none;
   text-decoration:none;
+  padding: 8px 34px;
 }
 
 main {
@@ -159,6 +163,15 @@ main {
   align-items: center;
   padding: 69px 0;
   gap: 25px;
+  margin: 0;
+}
+
+.slogan h1 {
+  width: 620px;
+}
+
+.page-title {
+  margin: 0;
 }
 
 .advantages{
@@ -169,27 +182,51 @@ main {
 
 .advantages-list {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
 }
 
+.advantages-title {
+  display: inline-block;
+  margin: 0;
+  width: 175px;
+  text-align: center;
+}
+
+
+.black-line::after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: #000000;
+  opacity: 0.3;
+}
+
+.white-line::after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.3;
+}
+
+.advatages-description {
+  margin: 0;
+  width: 230px;
+}
+
 .advantages-item {
-  width: 400px;
-}
-
-.advantages-item:first-child {
-  width: 1200px;
-}
-
-.advantages-item:last-child {
-  width: 1200px;
-}
-
-.advantages-photo {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 103px 85px;
+  gap: 30px;
 }
 
 h1 {
@@ -206,9 +243,39 @@ h1+p {
   color: #333333
 }
 
-.advantages li:nth-child(4n+1) {
-  background: #82B3D3;
+.advantages-item.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 92.5px 85px;
+  gap: 30px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 230px;
+  align-items: center;
+}
+
+.advantages li:first-child {
+  background-image: url(../images/sedona-photo.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
   color: #ffffff;
+  width: 1200px;
+}
+
+.advantages li:last-child {
+  background-image: url(../images/canyon-sedona.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  color: #ffffff;
+  width: 1200px;
 }
 
 li.advantages-item:nth-child(2n+2) {
