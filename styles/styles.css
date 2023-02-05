@@ -16,6 +16,7 @@
 
 html {
   height: 100%;
+  background: #F2F2F2;
 }
 
 body {
@@ -23,15 +24,16 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #050404;
-  background-color: #F2F2F2;
+  background: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0;
   position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) ;
 }
 
 .navigation {
@@ -170,7 +172,11 @@ main {
   width: 620px;
 }
 
-.page-title {
+.title {
+  margin: 0;
+}
+
+.subtitle {
   margin: 0;
 }
 
@@ -315,19 +321,61 @@ li.advantages-item:nth-child(3) {
 .benefits-list {
   display: flex;
   flex-direction: row;
-  padding: 0;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .benefits-item {
-  width: 400px;
-  position: relative;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 80px 85px;
-  gap: 10px;
+  padding: 81px 85px;
+  gap: 30px;
+  width: 230px;
+}
+
+.benefits-item span{
+  position: relative;
+  width: 75px;
+  height: 72px;
+}
+
+.house::before {
+  background-image: url(../images/house.svg);
+  content: '';
+  position: absolute;
+  left: calc(50% - 75px/2 + 1px);
+  top: calc(50% - 72px/2);
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+}
+
+.food::before {
+  background-image: url(../images/food.svg);
+  content: '';
+  position: absolute;
+  left: calc(50% - 74px/2 + 0.5px);
+  top: calc(50% - 70px/2);
+  display: block;
+  width: 74px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+
+.souvenirs::before {
+  background-image: url(../images/souvenirs.svg);
+  content: '';
+  position: absolute;
+  left: calc(50% - 64px/2 + 0.5px);
+  top: calc(50% - 76px/2);
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-repeat: no-repeat;
 }
 
 .benefits-travel {
@@ -335,6 +383,7 @@ li.advantages-item:nth-child(3) {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  width: 505px;
 }
 
 .benefits-travel+p {
@@ -344,55 +393,25 @@ li.advantages-item:nth-child(3) {
   color: #333333;
 }
 
-.benefits-item:nth-child(1)::after {
-  background-image: url(../images/house.svg);
-  content: '';
-  position: absolute;
-  width: 75px;
-  height: 72px;
-  left: calc(50% - 75px/2 + 1px);
-  top: calc(50% - 72px/2);
-  background-repeat: no-repeat;
-}
-
-.benefits-item:nth-child(2)::after {
-  background-image: url(../images/food.svg);
-  content: '';
-  position: absolute;
-  width: 74px;
-  height: 70px;
-  left: calc(50% - 74px/2 + 0.5px);
-  top: calc(50% - 70px/2);
-  background-repeat: no-repeat;
-}
-
-.benefits-item:nth-child(3)::after {
-  background-image: url(../images/suvenirs.svg);
-  content: '';
-  position: absolute;
-  width: 64px;
-  height: 76px;
-  left: calc(50% - 64px/2 + 0.5px);
-  top: calc(50% - 76px/2);
-  background-repeat: no-repeat;
-}
-
 .benefits-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .benefits-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .benefits-item:nth-child(odd) {
-  background: rgba(131, 179, 211, 0.12);
+  background: #83B3D312;
 }
 
 .catalog-link {
@@ -400,21 +419,24 @@ li.advantages-item:nth-child(3) {
   flex-direction: column;
   align-items: center;
   padding: 96px 304px;
-  gap: 10px;
 }
 
-h2.catalog-link-question {
+.catalog-link-question {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-   }
+  margin: 0;
+  margin-bottom: 20px;
+  }
 
 .catalog-link-question+p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .catalog-link-button {
@@ -428,6 +450,8 @@ h2.catalog-link-question {
   border-radius: 4px;
   border:none;
   text-decoration:none;
+  padding: 8px 50px;
+  width: 276px;
 }
 
 .subscribe {
@@ -436,7 +460,6 @@ h2.catalog-link-question {
   justify-content: center;
   align-items: center;
   padding: 96px 258px 104px;
-  gap: 10px;
   color: #ffffff;
   background-color: #000000;
   background: url(../images/subscribe-background.jpg);
@@ -449,25 +472,41 @@ h2.catalog-link-question {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-title+p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-form {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 20px;
-  gap: 260px;
-  width: 452px;
-  border-radius: 4px 0 0 4px;
+  padding: 0;
+}
+
+.subscribe-form input {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 20px;
   background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  width: 412px;
+  border:none;
 }
 
 .sebscribe-button {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -479,21 +518,30 @@ h2.catalog-link-question {
   border-radius: 0 4px 4px 0;
   border:none;
   text-decoration:none;
+  width: 232px;
+  padding: 8px 50px;
 }
 
 .page-footer-container {
   background: #FFFFFF;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 70px 35px;
+  gap: 40px;
   margin: 0 auto;
 }
 
 .footer-social {
-  width: 200px;
-  margin-right: 236.5px;
+  width: 142px;
+  margin-right: 41.5px;
 }
 
-.footer-sicial-list {
+.footer-social-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -504,8 +552,9 @@ h2.catalog-link-question {
 }
 
 .contacts {
-  width: 331px;
-  margin-right: 235.5px;
+  text-align: center;
+  width: 720px;
+  margin-right: 41.5px;
 }
 
 .logo-html-academy {
@@ -514,11 +563,13 @@ h2.catalog-link-question {
 }
 
 .contacts-phone {
+  display: inline-block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  width: 331px;
 }
 
 .product {
