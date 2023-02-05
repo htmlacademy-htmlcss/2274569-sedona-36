@@ -155,7 +155,7 @@ main {
   background-position: bottom, top;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 66.5px 0;
+  padding: 51px 0 82px;
 }
 
 .slogan {
@@ -249,10 +249,19 @@ h1+p {
   color: #333333
 }
 
-.advantages-item.wrap {
+.advantages-item:first-child {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  padding: 92.5px 85px;
+  gap: 30px;
+}
+
+.advantages-item:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
   padding: 92.5px 85px;
   gap: 30px;
@@ -277,7 +286,7 @@ h1+p {
 
 .advantages li:last-child {
   background-image: url(../images/canyon-sedona.jpg);
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-color: #82B3D3;
   color: #ffffff;
