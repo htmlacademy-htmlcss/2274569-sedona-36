@@ -163,7 +163,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 69px 0;
+  padding: 69px 0 90px;
   gap: 25px;
   margin: 0;
 }
@@ -513,7 +513,7 @@ li.advantages-item:nth-child(3) {
   border:none;
 }
 
-.sebscribe-button {
+.subscribe-button {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -557,7 +557,7 @@ li.advantages-item:nth-child(3) {
   width: 47.33px;
   flex-direction: row;
   align-items: center;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .contacts {
