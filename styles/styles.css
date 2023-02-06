@@ -43,12 +43,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 70px;
-  gap: 30px;
   margin-bottom: -10px;
 }
 
+
+
 .navigation-logo {
   width: 138px;
+  margin-right: 30px ;
 }
 
 .page-header-logo {
@@ -86,7 +88,10 @@ body {
   isolation: isolate;
 }
 
-.navigation-link-item:last-child {
+.navigation-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 0;
 }
 
