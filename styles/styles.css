@@ -571,15 +571,19 @@ li.advantages-item:nth-child(3) {
 
 .footer-social-list {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 .footer-social-item {
-  width: 47.33px;
-  flex-direction: row;
+  display: flex;
   align-items: center;
-  padding: 0 10px;
+  justify-content: center;
+  width: 47.33px;
+  height: 40px;
 }
 
 .contacts {
@@ -1031,18 +1035,38 @@ fieldset {
 }
 
 .pagination-link {
-  color: #FFFFFF;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
   background: #82B3D3;
   border-radius: 4px;
+  width: 60px;
+  height: 60px;
   text-decoration: none;
 }
 
-.pagination-link.pagination-current,.pagination-link.more-links {
+.pagination-link.pagination-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   background: #F2F2F2;
   border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.more-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
 }
 
 .visually-hidden {
