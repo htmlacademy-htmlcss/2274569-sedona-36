@@ -1203,8 +1203,10 @@ fieldset {
 	color: #83B3D3;;
 }
 
-.brown:hover {
+.brown:hover,
+.brown:focus-visible {
   background: #615048;
+  outline: none;
 }
 
 .brown:active {
@@ -1216,8 +1218,10 @@ fieldset {
   background: #E5E5E5;
 }
 
-.blue:hover {
+.blue:hover,
+.blue:focus-visible {
   background: #68A2CA;
+  outline: none;
 }
 
 .blue:active {
@@ -1229,8 +1233,10 @@ fieldset {
   background: #E5E5E5;
 }
 
-.green:hover {
+.green:hover,
+.green:focus-visible {
   background: #6C9E42;
+  outline: none;
 }
 
 .green:active {
