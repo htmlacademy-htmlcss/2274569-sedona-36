@@ -817,6 +817,24 @@ fieldset {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background: #F2F2F2;
+}
+
+.price-value:hover {
+  background: #E6E6E6;
+  outline: none;
+}
+
+.price-value:focus{
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.price-value:active{
+  background: #F2F2F2;
+  border: 2px solid #000000;
+  outline: none;
 }
 
 .button-submit {
@@ -915,22 +933,45 @@ fieldset {
   margin-right: 70px;
 }
 
-.sorting-buttons {
+.sorting-type-options:hover,
+.sorting-type-options:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.sorting-type-options:active {
+  border: 2px solid #3F5E72;
+}
+
+.view-options-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   padding: 0;
-  gap: 8px;
   margin: 0;
+  gap: 8px;
 }
-
-.sorting {
-  padding: 14px 12px;
-  gap: 10px;
+.view-button {
+  max-width: 48px;
+  max-height: 48px;
+  padding: 10.5px 14px;
+  margin: 0;
+  background-color: #FFFFFF;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  cursor: pointer;
 }
+
+.view-button:hover,
+.view-button:active {
+  border: 2px solid #000000;
+}
+
+.view-button:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
 
 .hotel-name {
   margin: 0;
