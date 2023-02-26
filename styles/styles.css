@@ -149,17 +149,17 @@ li {
 
 .navigation-link-item:last-child {
   padding: 14px 0;
+  width: 160px;
 }
 
 
 
 .navigation-link.batton {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  width: 92px;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
