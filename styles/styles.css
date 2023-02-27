@@ -65,8 +65,35 @@ body {
   padding: 0;
 }
 
-li.navigation-item {
+.navigation-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px 16px;
+}
+
+.underline-index,
+.underline-catalog {
+  position: relative;
+}
+
+.underline-index::after {
+  content: '';
+  position: absolute;
+  top: 63px;
+  width: 68px;
+  height: 0;
+  border: 1px solid #756257;
+}
+
+.underline-catalog::after {
+  content: '';
+  position: absolute;
+  top: 63px;
+  width: 93px;
+  height: 0;
+  border: 1px solid #756257;
 }
 
 .navigation-user {
@@ -138,15 +165,17 @@ li {
 
 .navigation-link-item:last-child {
   padding: 14px 0;
+  width: 160px;
 }
 
+
+
 .navigation-link.batton {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  width: 92px;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
@@ -605,6 +634,9 @@ li.advantages-item:nth-child(3) {
   text-align: center;
   text-transform: uppercase;
   width: 331px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 }
 
 .product {
@@ -801,6 +833,24 @@ fieldset {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background: #F2F2F2;
+}
+
+.price-value:hover {
+  background: #E6E6E6;
+  outline: none;
+}
+
+.price-value:focus{
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.price-value:active{
+  background: #F2F2F2;
+  border: 2px solid #000000;
+  outline: none;
 }
 
 .button-submit {
@@ -830,7 +880,21 @@ fieldset {
   cursor: pointer;
   text-decoration:none;
   padding: 8px 50px;
- }
+}
+
+.button-reset:hover {
+  opacity: 60%;
+}
+
+.button-reset:focus-visible {
+  outline: none;
+  box-sizing: border-box;
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  opacity: 30%;
+}
 
 .catalog {
   text-align: start;
@@ -847,7 +911,6 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  gap: 200px;
   margin-bottom: 40px;
 }
 
@@ -864,7 +927,7 @@ fieldset {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  gap: 70px;
+  margin-left: 200px;
 }
 
 .sorting-type-options {
@@ -883,16 +946,48 @@ fieldset {
   color: #333333;
   padding: 10px 20px;
   width: 292px;
+  margin-right: 70px;
 }
 
-.sorting-buttons {
+.sorting-type-options:hover,
+.sorting-type-options:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.sorting-type-options:active {
+  border: 2px solid #3F5E72;
+}
+
+.view-options-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   padding: 0;
+  margin: 0;
   gap: 8px;
 }
+.view-button {
+  max-width: 48px;
+  max-height: 48px;
+  padding: 10.5px 14px;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-button:hover,
+.view-button:active {
+  border: 2px solid #000000;
+}
+
+.view-button:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
 
 .hotel-name {
   margin: 0;
@@ -1106,4 +1201,94 @@ fieldset {
 }
 .rating-result > span.active {
 	color: #83B3D3;;
+}
+
+.brown:hover,
+.brown:focus-visible {
+  background: #615048;
+  outline: none;
+}
+
+.brown:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #E5E5E5;
+}
+
+.blue:hover,
+.blue:focus-visible {
+  background: #68A2CA;
+  outline: none;
+}
+
+.blue:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.blue:disabled {
+  background: #E5E5E5;
+}
+
+.green:hover,
+.green:focus-visible {
+  background: #6C9E42;
+  outline: none;
+}
+
+.green:active {
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.green:disabled {
+  background: #E5E5E5;
+}
+
+.button-social:focus-visible {
+  fill: #68A2CA;
+  outline: none;
+}
+.button-social {
+  fill:  #83B3D3;
+}
+
+.social:hover {
+  fill: #68A2CA;
+}
+
+.social:active {
+  fill: #68A2CA;
+  opacity: 30%;
+}
+
+.contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
+.contacts-phone:focus-visible {
+  color: #756157;
+  outline: none;
+}
+
+.html-academy-logo:hover {
+  fill: #756157;
+}
+
+.html-academy-logo:active {
+  fill: #756157;
+  opacity: 30%;
+}
+
+.html-academy-link:focus-visible{
+  fill: #756157;
+  outline: none;
 }
