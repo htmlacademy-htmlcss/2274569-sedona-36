@@ -1451,7 +1451,7 @@ fieldset {
 .modal {
   position: relative;
   margin: auto;
-  /*margin-top: 396px;*/
+  margin-top: 396px;
   padding: 64px 70px;
   background-color: #ffffff;
 }
@@ -1766,6 +1766,6 @@ fieldset {
 
 
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
 }
