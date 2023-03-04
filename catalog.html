@@ -25,21 +25,25 @@
           </ul>
             <ul class="navigation-user">
               <ul class="navigation-icon">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <img src="images/header/search.svg" class="search" alt="Поиск" width="20" height="20">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <img src="images/header/favorites.svg" class="favotites" alt="favorites" width="20" height="20">
-                  <div class="green-circle">
-                  <span class="favorites-number">12</span>
-                  </div>
-                  <span class="visually-hidden">Избранное</span>
-                </a>
-              </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" alt="Поиск">
+                      <path fill="#000" d="m18.893 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/>
+                    </svg>
+                    <span class="visually-hidden">Поиск</span>
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none" alt="Избранное">
+                      <path fill="#000" d="M9.293 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                    </svg>
+                    <div class="green-circle">
+                    <span class="favorites-number">12</span>
+                    </div>
+                    <span class="visually-hidden">Избранное</span>
+                  </a>
+                </li>
             </ul>
               <li class="navigation-link-item">
                 <a class="navigation-link batton brown" href="catalog.html">Хочу сюда!</a>
@@ -74,13 +78,19 @@
             <legend class="product-filter-title">Инфраструктура:</legend>
             <div class="controls">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimmingpool" checked> Бассейн
+                  <input class="control-input visually-hidden" type="checkbox" name="swimmingpool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked> Парковка
+                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi"> Wi-Fi
+                  <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </div>
           </fieldset>
@@ -88,13 +98,19 @@
             <legend class="product-filter-title">Тип Жилья:</legend>
             <div class="controls">
                 <label class="control">
-                  <input class="control-input" type="radio" value="hotel" name="product-group" checked> Гостиница
+                  <input class="control-input visually-hidden" type="radio" value="hotel" name="product-group" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Гостиница</span>
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" value="motel" name="product-group" > Мотель
+                  <input class="control-input visually-hidden" type="radio" value="motel" name="product-group" >
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" value="apartments" name="product-group"> Апатаменты
+                  <input class="control-input visually-hidden" type="radio" value="apartments" name="product-group">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апатаменты</span>
                 </label>
               </div>
           </fieldset>
@@ -107,6 +123,12 @@
                   <input class="price-value max" type="text" name="max-price" value="9000">
                 </div>
                 <div class="price-slider">
+                  <div class="range-bar">
+                    <div class="range-quantity" style="height: 4px; width: 226px">
+                    <button type="button" class="range-rectangle min" ></button>
+                    <button type="button" class="range-rectangle max" tabindex="2"></button>
+                    </div>
+                  </span>
                 </div>
             </fieldset>
             <div class="button-container">
