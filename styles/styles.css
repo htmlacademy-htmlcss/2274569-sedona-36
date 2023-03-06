@@ -71,6 +71,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px 16px;
+  list-style-type:none;
 }
 
 .underline-index,
@@ -104,6 +105,7 @@ body {
   gap: 20px;
   width: 268px;
   margin: 0;
+  list-style-type:none;
 }
 
 .navigation-icon {
@@ -121,10 +123,6 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
-}
-
-li {
-  list-style-type:none;
 }
 
 .page-header {
@@ -282,18 +280,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 112px 85px;
+  padding: 112.5px 85px;
   gap: 30px;
 }
 
-h1 {
+.title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
  }
 
-h1+p {
+.title+.subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -519,7 +517,7 @@ li.advantages-item:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 258px 104px;
+  padding: 96px 258px 105px;
   color: #ffffff;
   background-color: #000000;
   background: url(../images/subscribe-background.jpg);
@@ -588,7 +586,7 @@ li.advantages-item:nth-child(3) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 70px 35px;
+  padding: 44px 70px 34px;
   gap: 40px;
   margin: 0 auto;
 }
@@ -672,6 +670,7 @@ li.advantages-item:nth-child(3) {
   padding: 0;
   gap: 10px;
   margin-bottom: 40px;
+  list-style-type:none;
 }
 
 .breadcrumbs-item {
@@ -737,14 +736,6 @@ fieldset {
   padding: 0;
   padding-bottom: 32px;
 }
-
-/*.control-input {
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  margin: 0;
-}*/
 
 .control {
   display: block;
@@ -1046,7 +1037,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px 70px 60px;
+  padding: 50px 71px 60px 69px;
   background: #FFFFFF;
  }
 
@@ -1092,6 +1083,10 @@ fieldset {
   padding: 10px 20px;
   width: 292px;
   margin-right: 70px;
+  appearance: none;
+  background-image: url(../images/select.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .sorting-type-options:hover,
@@ -1111,6 +1106,7 @@ fieldset {
   padding: 0;
   margin: 0;
   gap: 8px;
+  list-style-type:none;
 }
 .view-button {
   max-width: 48px;
@@ -1272,6 +1268,7 @@ fieldset {
   padding: 0;
   gap: 8px;
   margin: 0;
+  list-style-type:none;
 }
 
 .pagination-link {
@@ -1766,6 +1763,6 @@ fieldset {
 
 
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
 }
