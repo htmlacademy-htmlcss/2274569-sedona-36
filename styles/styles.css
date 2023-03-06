@@ -63,6 +63,7 @@ body {
   width: 640px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -72,6 +73,7 @@ body {
   align-items: center;
   padding: 20px 16px;
   list-style-type:none;
+  flex-wrap: wrap;
 }
 
 .underline-index,
@@ -1762,6 +1764,6 @@ fieldset {
 
 
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
 }
