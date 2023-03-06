@@ -27,7 +27,7 @@
         <ul class="navigation-icon">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" alt="Поиск">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" >
               <path fill="#000" d="m18.893 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/>
             </svg>
             <span class="visually-hidden">Поиск</span>
@@ -35,7 +35,7 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none" alt="Избранное">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none" >
               <path fill="#000" d="M9.293 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
             </svg>
             <div class="green-circle">
@@ -196,8 +196,8 @@
         <form class="modal-form">
           <div class="travel-date">
           <p class="field-group">
-            <label for="date" class="modal-lable check-in">Дата заезда: </label>
-            <input type="date" id="date" name="date" class="modal-input" value="2020-04-27"/>
+            <label for="date-check-in" class="modal-lable check-in">Дата заезда: </label>
+            <input type="date" id="date-check-in" name="date" class="modal-input" value="2020-04-27"/>
             <span class="calendar-mark">
               <span class="calendar-mark-title">27 апреля 2020</span>
               <svg class="calendar-svg" width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
@@ -219,8 +219,8 @@
         </div>
         <div class="travel-date">
           <p class="field-group">
-            <label for="date" class="modal-lable departure">Дата выезда: </label>
-            <input type="date" id="date" name="date" class="modal-input" value="2021-09-01"/>
+            <label for="date-departure" class="modal-lable departure">Дата выезда: </label>
+            <input type="date" id="date-departure" name="date" class="modal-input" value="2021-09-01"/>
             <span class="calendar-mark">
               <span class="calendar-mark-title">1 сентября 2021</span>
               <svg class="calendar-svg" width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
@@ -277,7 +277,7 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
               </button>
-              <input type="text" value="2" size="2" class="quantity" id="quantity"/>
+              <input type="text" value="2" size="2" class="quantity" id="quantity-child"/>
               <button type="button" class="bt_plus">
                 <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg" >
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -291,6 +291,5 @@
         </form>
       </section>
     </div>
-   </div>
   </body>
 </html>
