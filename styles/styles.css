@@ -186,12 +186,9 @@ body {
   padding: 8px 34px;
 }
 
-main {
-  text-align: center;
-}
-
 .main-container {
   flex-grow: 1;
+  text-align: center;
 }
 
 .logo {
@@ -552,7 +549,7 @@ li.advantages-item:nth-child(3) {
 }
 
 .subscribe-form input {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -565,7 +562,7 @@ li.advantages-item:nth-child(3) {
 }
 
 .subscribe-button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -707,6 +704,7 @@ li.advantages-item:nth-child(3) {
   margin: 0;
   gap: 70px;
 }
+
 .button-container {
   display: flex;
   flex-direction: column;
@@ -716,9 +714,7 @@ li.advantages-item:nth-child(3) {
   margin-bottom: 4px;
 }
 
-fieldset {
-    border:0 none;
- }
+
 
 .product-filter-group {
   display: flex;
@@ -727,6 +723,7 @@ fieldset {
   padding: 0;
   margin: 0;
   gap: 32px;
+  border:0 none;
 }
 
 .product-filter-title {
@@ -899,6 +896,7 @@ fieldset {
   gap: 32px;
   margin: 0;
   position: relative;
+  border:0 none;
 }
 
 .price-adjustment {
@@ -948,7 +946,7 @@ fieldset {
 }
 
 .price-value {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   opacity: 1;
@@ -993,7 +991,7 @@ fieldset {
 }
 
 .button-submit {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1009,7 +1007,7 @@ fieldset {
 }
 
 .button-reset {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1075,7 +1073,7 @@ fieldset {
 }
 
 .sorting-type-options {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   box-sizing: border-box;
   border: 2px solid #E5E5E5;
@@ -1208,7 +1206,7 @@ fieldset {
 }
 
 .button.favorites {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1225,7 +1223,7 @@ fieldset {
 }
 
 .button.checked {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1498,7 +1496,7 @@ fieldset {
 }
 
 .modal-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1509,7 +1507,7 @@ fieldset {
 }
 
 .modal-lable {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1520,7 +1518,7 @@ fieldset {
 
 .eror-date {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1532,7 +1530,7 @@ fieldset {
 
 .correct-date {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1607,7 +1605,7 @@ fieldset {
   position: absolute;
   left: -104px;
   top: 42px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1643,7 +1641,7 @@ fieldset {
 
 
 .quantity_inner .quantity {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1660,7 +1658,7 @@ fieldset {
 }
 
 .modal-link-button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1717,7 +1715,7 @@ fieldset {
 }
 
 .modal-input {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1762,7 +1760,7 @@ fieldset {
 }
 
 .calendar-mark-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
