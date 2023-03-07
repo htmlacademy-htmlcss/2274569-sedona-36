@@ -219,7 +219,7 @@ main {
   margin: 0;
 }
 
-.slogan h1 {
+.slogan .title {
   width: 620px;
 }
 
@@ -920,9 +920,6 @@ fieldset {
 }
 
 .price-value.min {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -933,12 +930,10 @@ fieldset {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: 0;
+  position: relative;
 }
 
 .price-value.max {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -949,14 +944,26 @@ fieldset {
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
   border: 0;
+  position: relative;
 }
 
 .price-value {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
+  opacity: 1;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   background: #F2F2F2;
+}
+
+.price-value::-webkit-input-placeholder{
+  color: #000000;
+}
+
+.price-value::-moz-placeholder {
+  color: #000000;
 }
 
 .price-value:hover {
@@ -1048,10 +1055,10 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
-.sortin-and-form+h1 {
+.sortin-and-form+.title {
   width: 338px;
   font-weight: 700;
   font-size: 30px;
@@ -1766,4 +1773,28 @@ fieldset {
 
 .modal-container-close {
   display: none;
+}
+
+.price-adjustment-from {
+  position: absolute;
+  color: black;
+  padding-top: 12px;
+  padding-left: 106px;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+.price-adjustment-up-to {
+  position: absolute;
+  color: black;
+  padding-top: 12px;
+  padding-left: 249px;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 1;
 }
