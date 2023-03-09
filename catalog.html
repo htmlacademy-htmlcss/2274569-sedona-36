@@ -126,10 +126,12 @@
             <fieldset class="price-filter-group">
               <legend class="product-filter-title">Стоимость, ₽:</legend>
               <div class="price-adjustment">
+                <label class="visually-hidden" for="min-price">Минимальная цена</label>
                 <span class="price-adjustment-from">от</span>
-                  <input class="price-value min" type="text" name="min-price" placeholder="0" >
+                  <input class="price-value min" type="text" name="min-price" placeholder="0" id="min-price">
+                  <label class="visually-hidden" for="max-price">максимальная цена</label>
                   <span class="price-adjustment-up-to">до</span>
-                  <input class="price-value max" type="text" name="max-price" placeholder="9000">
+                  <input class="price-value max" type="text" name="max-price" placeholder="9000" id="max-price">
                 </div>
                 <div class="price-slider">
                   <div class="range-bar">
@@ -294,7 +296,8 @@
       <p>Только полезная информация и никакого спама,<br>
          честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="appointment-email">
+        <label class="visually-hidden" for="email">Подписка</label>
+        <input type="email" placeholder="Ваш e-mail" name="appointment-email" id="email">
         <button class="subscribe-button blue" type="submit">Подписаться</button>
       </form>
     </section>
