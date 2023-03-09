@@ -76,6 +76,19 @@ body {
   flex-wrap: wrap;
 }
 
+.navigation-item .navigation-link:hover {
+  opacity: 0.7;
+}
+
+.navigation-item:active {
+  opacity: 0.3;
+}
+
+.navigation-item .navigation-link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
 .underline-index,
 .underline-catalog {
   position: relative;
@@ -341,9 +354,13 @@ body {
   width: 1200px;
 }
 
-li.advantages-item:nth-child(2n+2) {
+li.advantages-item:nth-child(2) {
   background: rgba(131, 179, 211, 0.12);
- }
+}
+
+li.advantages-item:nth-child(4) {
+  background: rgba(131, 179, 211, 0.12);
+}
 
 li.advantages-item:nth-child(3) {
   background: rgba(131, 179, 211, 0.2);
@@ -382,6 +399,7 @@ li.advantages-item:nth-child(3) {
   align-items: flex-start;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
@@ -646,7 +664,6 @@ li.advantages-item:nth-child(3) {
   background-color: #000000;
   background: url(../images/filter-background.jpg);
   background-size: 100% auto;
-  background-repeat: no-repeat;
   text-align: start;
 }
 
@@ -684,7 +701,7 @@ li.advantages-item:nth-child(3) {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0;
-  gap: 162px;
+  gap: 153px;
 }
 
 .product-filter-group-left {
@@ -742,6 +759,13 @@ li.advantages-item:nth-child(3) {
   position: relative;
   gap: 16px;
   padding-left: 35px;
+  cursor: pointer;
+}
+
+.control-label {
+  display:flex;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .control-mark {
@@ -769,11 +793,8 @@ li.advantages-item:nth-child(3) {
 }
 
 .control-input[type="radio"]:focus+.control-mark{
-  box-shadow: 3px 3px 0 0 #83B3D3,
-  3px -3px 0 0 #83B3D3,
- -3px 3px 0 0 #83B3D3,
- -3px -3px 0 0 #83B3D3;
   outline: none;
+  box-shadow: 0 0 0 0.2rem #83B3D3;
 }
 
 .control:active {
@@ -1053,7 +1074,7 @@ li.advantages-item:nth-child(3) {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .sortin-and-form+.title {
@@ -1117,7 +1138,7 @@ li.advantages-item:nth-child(3) {
 .view-button {
   max-width: 48px;
   max-height: 48px;
-  padding: 10.5px 14px;
+  padding: 13px 14px;
   margin: 0;
   background-color: #FFFFFF;
   border: 2px solid #E5E5E5;
@@ -1672,7 +1693,6 @@ li.advantages-item:nth-child(3) {
   border:none;
   text-decoration:none;
   padding: 18px 256.5px;
-  width: 64px;
 }
 
 .quantity_inner:first-child {
@@ -1753,6 +1773,17 @@ li.advantages-item:nth-child(3) {
   align-items: center;
   padding: 12px 20px;
   gap: 248px;
+  cursor: pointer;
+}
+
+.modal-input:focus {
+  background: #E6E6E6;
+  box-shadow: 3px 3px 0 0 #83B3D3,
+  3px -3px 0 0 #83B3D3,
+ -3px 3px 0 0 #83B3D3,
+ -3px -3px 0 0 #83B3D3;
+  opacity: 0.6;
+  outline: none;
 }
 
 .calendar-svg {

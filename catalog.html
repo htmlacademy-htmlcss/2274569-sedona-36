@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="container">
       <header data-test="header" class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img src="images/header/logo.svg" class="page-header-logo"  alt="Логотип Седоны" width="140" height="70">
+            <img src="images/header/logo.svg" class="page-header-logo"  alt="Логотип Седоны." width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -84,18 +84,18 @@
           <fieldset class="product-filter-group">
             <legend class="product-filter-title">Инфраструктура:</legend>
             <div class="controls">
-                <label class="control">
-                  <input class="control-input visually-hidden" type="checkbox" name="swimmingpool" checked>
+                <label class="control" for="checkbox-1">
+                  <input class="control-input visually-hidden" id="checkbox-1" type="checkbox" name="swimmingpool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
-                <label class="control">
-                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                <label class="control" for="checkbox-2">
+                  <input class="control-input visually-hidden" id="checkbox-2" type="checkbox" name="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
-                <label class="control">
-                  <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                <label class="control" for="checkbox-3">
+                  <input class="control-input visually-hidden" id="checkbox-3" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
@@ -104,20 +104,20 @@
           <fieldset class="product-filter-group">
             <legend class="product-filter-title">Тип Жилья:</legend>
             <div class="controls">
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" value="hotel" name="product-group" checked>
+                <label class="control" for="radio-1">
+                  <input class="control-input visually-hidden" id="radio-1" type="radio" value="hotel" name="product-group" checked>
                   <span class="control-mark"></span>
                   <span class="control-label"> Гостиница</span>
                 </label>
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" value="motel" name="product-group" >
+                <label class="control" for="radio-2">
+                  <input class="control-input visually-hidden" id="radio-2" type="radio" value="motel" name="product-group" >
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" value="apartments" name="product-group">
+                <label class="control" for="radio-3">
+                  <input class="control-input visually-hidden" id="radio-3" type="radio" value="apartments" name="product-group">
                   <span class="control-mark"></span>
-                  <span class="control-label">Апатаменты</span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </div>
           </fieldset>
@@ -126,13 +126,16 @@
             <fieldset class="price-filter-group">
               <legend class="product-filter-title">Стоимость, ₽:</legend>
               <div class="price-adjustment">
+                <label class="visually-hidden" for="min-price">Минимальная цена</label>
                 <span class="price-adjustment-from">от</span>
-                  <input class="price-value min" type="text" name="min-price" placeholder="0" >
+                  <input class="price-value min" type="text" name="min-price" placeholder="0" id="min-price">
+                  <label class="visually-hidden" for="max-price">максимальная цена</label>
                   <span class="price-adjustment-up-to">до</span>
-                  <input class="price-value max" type="text" name="max-price" placeholder="9000">
+                  <input class="price-value max" type="text" name="max-price" placeholder="9000" id="max-price">
                 </div>
                 <div class="price-slider">
                   <div class="range-bar">
+                    <span class="visually-hidden">Диапазон стоимости</span>
                     <div class="range-quantity" style="height: 4px; width: 226px">
                     <button type="button" class="range-rectangle min" ></button>
                     <button type="button" class="range-rectangle max" tabindex="2"></button>
@@ -158,32 +161,35 @@
       </select>
       <ul class="view-options-list">
         <li class="view-option">
-          <a class="view-button" href="#">
+          <button class="view-button" type="button">
+            <span class="visually-hidden">Изменить вид</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" >
               <path  d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
             </svg>
-          </a>
+          </button>
         </li>
         <li class="view-option">
-          <a class="view-button" href="#">
+          <button class="view-button" type="button">
+            <span class="visually-hidden">Изменить вид</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" >
               <path  d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
             </svg>
-          </a>
+          </button>
         </li>
         <li class="view-option">
-          <a class="view-button" href="#">
+          <button class="view-button" type="button">
+            <span class="visually-hidden">Изменить вид</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" >
               <path  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
             </svg>
-          </a>
+          </button>
         </li>
       </ul>
     </div>
     </div>
     <div class="product-cards">
       <div class="product-card">
-        <img src="images/catalog/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="212">
+        <img src="images/catalog/hotel-1.jpg" alt="Amara Resort & Spa." width="300" height="212">
         <h3 class="hotel-name">Amara Resort & Spa</h3>
         <div class="hotel-price">
         <p class="product-type">Гостиница</p>
@@ -204,7 +210,7 @@
       </div>
       </div>
       <div class="product-card">
-        <img src="images/catalog/hotel-2.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+        <img src="images/catalog/hotel-2.jpg" alt="Villas at Poco Diablo." width="300" height="212">
         <h3 class="hotel-name">Villas at Poco Diablo</h3>
         <div class="hotel-price">
         <p class="product-type">Гостиница</p>
@@ -225,7 +231,7 @@
       </div>
     </div>
       <div class="product-card">
-        <img src="images/catalog/hotel-3.jpg" alt="Desert Quail Inn" width="300" height="212">
+        <img src="images/catalog/hotel-3.jpg" alt="Desert Quail Inn." width="300" height="212">
         <h3 class="hotel-name">Desert Quail Inn</h3>
         <div class="hotel-price">
         <p class="product-type">Гостиница</p>
@@ -245,7 +251,7 @@
       </div>
       </div>
       <div class="product-card">
-        <img src="images/catalog/hotel-4.jpg" alt="GreenTree Inn" width="300" height="212">
+        <img src="images/catalog/hotel-4.jpg" alt="GreenTree Inn." width="300" height="212">
         <h3 class="hotel-name">GreenTree Inn</h3>
         <div class="hotel-price">
         <p class="product-type">Гостиница</p>
@@ -290,7 +296,8 @@
       <p>Только полезная информация и никакого спама,<br>
          честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="appointment-email">
+        <label class="visually-hidden" for="email">Подписка</label>
+        <input type="email" placeholder="Ваш e-mail" name="appointment-email" id="email">
         <button class="subscribe-button blue" type="submit">Подписаться</button>
       </form>
     </section>
