@@ -664,7 +664,6 @@ li.advantages-item:nth-child(3) {
   background-color: #000000;
   background: url(../images/filter-background.jpg);
   background-size: 100% auto;
-  background-repeat: no-repeat;
   text-align: start;
 }
 
@@ -761,6 +760,12 @@ li.advantages-item:nth-child(3) {
   gap: 16px;
   padding-left: 35px;
   cursor: pointer;
+}
+
+.control-label {
+  display:flex;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .control-mark {
