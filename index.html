@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
 <header data-test="header" class="page-header">
   <nav class="navigation">
     <a class="navigation-logo" href="index.html">
-      <img src="images/header/logo.svg" class="page-header-logo"  alt="Логотип Седоны" width="140" height="70">
+      <img src="images/header/logo.svg" class="page-header-logo"  alt="Логотип Седоны." width="140" height="70">
     </a>
     <ul class="navigation-list">
       <li class="navigation-item underline-index">
@@ -202,7 +202,7 @@
           <div class="travel-date">
           <p class="field-group">
             <label for="date-check-in" class="modal-lable check-in">Дата заезда: </label>
-            <input type="date" id="date-check-in" name="date" class="modal-input" value="2020-04-27">
+            <input type="date" id="date-check-in" name="date" class="modal-input" value="2020-04-27" required>
             <span class="calendar-mark">
               <span class="calendar-mark-title">27 апреля 2020</span>
               <svg class="calendar-svg" width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +225,7 @@
           <div class="travel-date">
           <p class="field-group">
             <label for="date-departure" class="modal-lable departure">Дата выезда: </label>
-            <input type="date" id="date-departure" name="date" class="modal-input" value="2021-09-01">
+            <input type="date" id="date-departure" name="date" class="modal-input" value="2021-09-01" required>
             <span class="calendar-mark">
               <span class="calendar-mark-title">1 сентября 2021</span>
               <svg class="calendar-svg" width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +254,7 @@
                 <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
             </button>
-            <input type="text" value="2" size="2" class="quantity" id="quantity">
+            <input type="text" value="2" size="2" class="quantity" id="quantity" required>
             <button type="button" class="bt_plus">
               <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -282,7 +282,7 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
               </button>
-              <input type="text" value="2" size="2" class="quantity" id="quantity-child">
+              <input type="text" value="2" size="2" class="quantity" id="quantity-child" required>
               <button type="button" class="bt_plus">
                 <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg" >
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -291,7 +291,7 @@
             </span>
             </div>
           </div>
-            <a href="catalog.html" class="modal-link-button">Найти</a>
+            <button type="submit" class="modal-link-button">Найти</a>
         </form>
       </section>
     </div>
