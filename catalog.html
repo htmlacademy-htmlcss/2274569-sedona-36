@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -135,10 +136,13 @@
                 </div>
                 <div class="price-slider">
                   <div class="range-bar">
-                    <span class="visually-hidden">Диапазон стоимости</span>
                     <div class="range-quantity" style="height: 4px; width: 226px">
-                    <button type="button" class="range-rectangle min" ></button>
-                    <button type="button" class="range-rectangle max" tabindex="2"></button>
+                    <button type="button" class="range-rectangle min" >
+                      <span class="visually-hidden">Минимальная стоимость</span>
+                    </button>
+                    <button type="button" class="range-rectangle max" tabindex="2">
+                      <span class="visually-hidden">Максимальная стоимость</span>
+                    </button>
                     </div>
                 </div>
                 </div>
@@ -272,7 +276,7 @@
     </div>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link pagination-current" href="#">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link blue" href="#">2</a>
@@ -297,7 +301,7 @@
          честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Подписка</label>
-        <input type="email" placeholder="Ваш e-mail" name="appointment-email" id="email">
+        <input type="email" placeholder="Ваш e-mail" name="appointment-email" id="email" required>
         <button class="subscribe-button blue" type="submit">Подписаться</button>
       </form>
     </section>
